@@ -1,0 +1,417 @@
+@media(min-width: 768px) {
+  .fake-header {
+    height: 84.40px;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: white;
+  }
+}
+
+@media(min-width: 992px) {
+  .fake-header {
+    height: 120px;
+  }
+}
+
+.site-banner {
+  position: relative;
+  height: 450px;
+
+  .banner-container {
+    position: relative;
+    height: 450px;
+
+    h1 {
+      position: absolute;
+      color: white;
+      font-size: 46px;
+      font-weight: 500;
+      bottom: 0;
+    }
+  }
+
+}
+
+.home-banner {
+  background: url('^media_src_home-banner-02.png^');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.home-section-bg {
+  background: url('^media_src_home-section-01.png^') no-repeat;
+}
+
+.home-section-01 {
+  position: relative;
+
+  p {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    padding-left: 25px;
+    list-style: none;
+    margin-bottom: 15px;
+
+    li {
+      font-size: 18px;
+      line-height: 25px;
+      position: relative;
+      margin-bottom: 5px;
+
+
+      &:before {
+        font-family: FontAwesome;
+        content: "\f111 ";
+        position: absolute;
+        left: -25px;
+        top: 2px;
+        font-size: 6px;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .home-section-bg {
+    background: url('^media_src_home-section-01.png^') no-repeat;
+    height: 345px;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.home-section-02 {
+  background: #19547e;
+
+  padding: 70px 0;
+
+  h2,
+  p {
+    color: white
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .home-content-2 {
+    padding: 80px 15px;
+  }
+
+  video {
+    margin-bottom: 60px;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+.home-section-03 {
+  padding: 50px 0;
+
+  h2 {
+    text-align: center;
+    color: #19547e;
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+
+  .twitter-box {
+    width: 290px;
+    height: auto;
+    margin: 0 auto;
+
+    .image-box {
+      width: 100%;
+      height: 350px;
+      background: url('^media_src_twitter-image.png^') no-repeat;
+      background-size: cover;
+      background-position: center;
+      float: none;
+    }
+
+    .content-box {
+      width: 100%;
+      height: 350px;
+      box-shadow: 0px 5px 76.44px 7.56px rgba(0, 0, 0, 0.09);
+      padding: 20px 30px;
+      float: none;
+
+      p {
+        color: #092c47;
+        line-height: 21px;
+        margin-bottom: 15px;
+        font-weight: 00;
+      }
+
+      a.tweet-url-title,
+      a.readmore {
+        color: $secondary-color;
+        display: block;
+        margin-bottom: 15px;
+        font-size: 17px;
+      }
+
+      span {
+        color: #092c47;
+        display: block;
+        margin-bottom: 15px;
+        font-size: 13px;
+      }
+
+      p {
+
+        .twitter-get-connected-title,
+        .twitter-get-connected-link {
+          font-size: 18px;
+          color: #3baecc;
+          font-size: 17px;
+          display: inline;
+          margin: 0px;
+
+          b {
+            font-weight: 400 !important;
+            text-transform: capitalize !important;
+
+          }
+
+        }
+
+        a {
+          &:after {
+            font-family: FontAwesome;
+            content: "\f054";
+            font-size: 18px;
+            color: #3baecc;
+            text-decoration: none;
+            margin-left: 5px;
+          }
+
+          @include on-event {
+            &:after {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      a.tlink {
+        font-size: 18px;
+        color: #3baecc;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+
+    .join-btn {
+      width: 263px !important;
+      height: 45px !important;
+      line-height: 42px !important;
+      font-size: 18px !important;
+      color: white !important;
+      background-color: $primary-color !important;
+      border-radius: 22px !important;
+      padding: 0 !important;
+      font-weight: 400 !important;
+      margin-left: 15px;
+
+
+      @include on-event {
+        background-color: $secondary-color !important;
+
+      }
+    }
+
+  }
+
+  .site-banner {
+    height: 660px;
+
+    .banner-container {
+      position: relative;
+      height: 660px;
+
+      h1 {
+        position: absolute;
+        color: white;
+        font-size: 48px;
+        font-weight: 500;
+        bottom: 50px;
+        line-height: 60px;
+        margin: 0;
+      }
+    }
+  }
+
+  .home-section-02 {
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  .home-section-03 {
+    h2 {
+      font-size: 30px
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .home-section-01 {
+    position: relative;
+
+    padding: 100px 0;
+
+    .home-section-bg {
+      background: url('^media_src_home-section-01.png^') no-repeat;
+      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 100px;
+      background-size: cover;
+      background-position: 0 center;
+    }
+
+    ul {
+      margin-bottom: 0;
+    }
+  }
+
+  .home-section-02 {
+    .home-content-2 {
+      padding: 22px 15px;
+
+      h2 {
+        margin-bottom: 40px;
+      }
+    }
+
+    video {
+      margin-bottom: 0px;
+    }
+  }
+
+  .home-section-03 {
+    padding: 100px 0;
+
+    .twitter-box {
+      width: 780px;
+      height: 280px;
+      margin: 0 auto;
+
+      .image-box {
+        width: 404px;
+        height: 280px;
+        background: url('^media_src_twitter-image.png^') no-repeat;
+        background-size: cover;
+        background-position: center;
+        float: left;
+      }
+
+      .content-box {
+        width: 376px;
+        height: 280px;
+        box-shadow: 0px 5px 76.44px 7.56px rgba(0, 0, 0, 0.09);
+        padding: 20px 30px;
+        float: right;
+
+        p {
+
+          line-height: 20px;
+
+        }
+
+        a.readmore {
+          display: block;
+        }
+
+        span {
+
+          display: block;
+        }
+
+        a.tlink {
+          font-size: 18px;
+
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-section-01 {
+
+    .home-section-bg {
+      height: 429px;
+
+    }
+  }
+
+  .home-section-02 {
+    .home-content-2 {
+      padding: 65px 15px;
+
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      padding-right: 20px;
+    }
+  }
+}
+
+@media(max-width:991px) {
+  .home-section-01 {
+    padding: 20px 0 0;
+
+    ul {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  footer .score-right {
+    padding-top: 20px;
+  }
+
+  #new-aston-footer .custom-linkedin {
+    background: url("^media_src_linkedin.png^") no-repeat;
+    background-position: center;
+  }
+
+
+}
+
+
+@media (min-width: 1980px) {
+  .home-section-01 {
+    .home-section-bg {
+      background: url('^media_src_home-section-01.png^') no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+    }
+  }
+}

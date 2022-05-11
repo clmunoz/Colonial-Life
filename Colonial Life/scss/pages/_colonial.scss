@@ -1,0 +1,203 @@
+.colonial-banner {
+    background: url('^media_src_colonial-life-banner-02.png^');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 35% center;
+
+    .banner-container {
+        h1 {
+            bottom: 105px;
+        }
+    }
+}
+
+.paul-banner {
+    background: url('^media_src_paul-banner-02.png^');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% center;
+
+    .banner-container {
+        h1 {
+            bottom: 105px;
+        }
+    }
+}
+
+.why-banner {
+    background: url('^media_src_why-banner-02.png^');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 26% center;
+
+    .banner-container {
+        h1 {
+            bottom: 105px;
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .colonial-banner {
+
+        .banner-container {
+            h1 {
+                bottom: 0px;
+            }
+        }
+    }
+
+    .paul-banner {
+        background: url('^media_src_paul-banner-02.png^');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 60% center;
+
+        .banner-container {
+            h1 {
+                bottom: 0px;
+            }
+        }
+    }
+
+    .why-banner {
+        background: url('^media_src_why-banner-02.png^');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 26% center;
+
+        .banner-container {
+            h1 {
+                bottom: 0px;
+            }
+        }
+    }
+}
+
+.about-us-01 {
+
+    padding: 80px 0;
+
+    p {
+        color: #19547e;
+        font-size: 20px;
+        margin: 0;
+        text-align: center;
+        line-height: 26px;
+
+        &:first-child {
+            margin-bottom: 25px
+        }
+    }
+}
+
+.about-us-02 {
+    h2 {
+        font-size: 36px;
+        text-align: center;
+        line-height: 40px;
+        padding: 0 8px;
+    }
+
+    .timeline {
+        padding: 60px 0;
+
+        .time-circle {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            border-radius: 100%;
+            border: 8px solid #5b7284;
+            display: block;
+            background: white;
+            -webkit-box-shadow: 0px 8px 0px 0px rgba(237, 237, 237, 1);
+            -moz-box-shadow: 0px 8px 0px 0px rgba(237, 237, 237, 1);
+            box-shadow: 0px 8px 0px 0px rgba(237, 237, 237, 1);
+
+            float: none;
+            margin: 0 auto;
+
+            .date-box {
+                position: absolute;
+                width: 78px;
+                height: 54px;
+                border: 4px solid #f26b5e;
+                background: white;
+                color: #5b7284;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 44px;
+                text-align: center;
+                top: -24px;
+                left: calc(50% - 35px);
+            }
+
+            .text-content {
+                position: absolute;
+                width: 188px;
+                height: 175px;
+                display: table;
+                top: 40px;
+                left: 51px;
+
+                p {
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #5b7284;
+                    font-weight: 400;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+
+            &:first-child {
+                .text-content {
+                    left: 46px;
+                }
+            }
+        }
+    }
+}
+
+.about-us-03 {
+    background: #edf5fa;
+    padding: 43px 0;
+
+    p {
+        color: #19547e;
+        font-size: 20px;
+        margin: 0;
+        text-align: center;
+        line-height: 26px;
+    }
+}
+
+@media(min-width: 992px) {
+    .about-us-03 {
+
+        p {
+            padding: 0 60px;
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    .about-us-02 {
+        .timeline {
+            padding: 80px 0 100px;
+
+            .time-circle {
+                margin: 0;
+                float: left;
+                -webkit-box-shadow: 8px 8px 0px 0px rgba(237, 237, 237, 1);
+                -moz-box-shadow: 8px 8px 0px 0px rgba(237, 237, 237, 1);
+                box-shadow: 8px 8px 0px 0px rgba(237, 237, 237, 1);
+
+                .date-box {
+                    top: calc(50% - 35px);
+                    left: -40px;
+                }
+            }
+        }
+    }
+}

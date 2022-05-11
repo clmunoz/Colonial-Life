@@ -1,0 +1,94 @@
+#why {
+    .opportunity {
+        margin-bottom: 65px;
+
+        h2 {
+            margin-top: 70px;
+            margin-bottom: 15px;
+            line-height: 1.25;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 1.25;
+            font-weight: 500;
+        }
+
+        video {
+            margin-top: 10px;
+        }
+    }
+
+    .activities {
+        background: #19547e;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 60px;
+
+        h2 {
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.25;
+        }
+
+        ul {
+            list-style-image: url("^media_src_why_bullet_img.png^");
+            padding-inline-start: 20px;
+
+            li {
+                margin-bottom: 25px;
+
+                p {
+                    color: white;
+                    font-size: 20px;
+                    padding-left: 13px;
+                    line-height: 1.25;
+                }
+            }
+        }
+
+        img {
+            margin-top: 5px;
+        }
+    }
+
+    .sum {
+        padding-top: 30px;
+        padding-bottom: 50px;
+
+        p {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 1.25;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #why {
+        .opportunity {
+            video {
+                margin-top: 79px;
+            }
+        }
+
+        .activities {
+            padding-top: 30px;
+            padding-bottom: 10px;
+
+            h2 {
+                margin-bottom: 30px;
+            }
+
+            p {
+                line-height: 1.25;
+            }
+        }
+
+        .sum {
+            padding-top: 90px;
+            padding-bottom: 80px;
+        }
+    }
+}
